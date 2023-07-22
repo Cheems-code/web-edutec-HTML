@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <title>EduTec</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./images/logo1.png" alt="" class="logo">
+            <ul class="nav-lis">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#contacto">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="#Informacion">Informacion</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="header-content">
+                <h1>EduTec</h1>
+                <p>¿Necesitas resúmenes o apuntes para estudiar en la Universidad o Instituto? En EduTec encontrarás
+                    todo tipo de
+                    documentos que facilitaran tus estudios.!Unete!</p>
+                <button class="button1" id="form-open">Iniciar Sesion</button>
+                <a href="./index (2).html" class="ctn">Registrarse</a>
+            </div>
+            <div class="hero-img">
+                <img src="./images/image 1.png" width="900" alt="">
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <div class="form_container">
+          <i class="uil uil-times form_close"></i>
+          <!-- Login From -->
+          <div class="form login_form">
+            <form action="#">
+              <h2>Iniciar Sesion</h2>
+  
+              <div class="input_box">
+                <input type="email" placeholder="Ingresa tu Gmail" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="Contraseña" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+  
+              <div class="option_field">
+                <span class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Remember me</label>
+                </span>
+                <a href="#" class="forgot_pw">Olvido su contraseña?</a>
+              </div>
+  
+              <button class="button">Ingresar Ahora</button>
+  
+              <div class="login_signup">¿No tiene cuenta? <a href="#" id="signup">Registrese</a></div>
+            </form>
+          </div>
+        </div>
+      </section>
+  
+      <script src="script.js"></script>
+  
+    <!--Servicios-->
+    <section class="services">
+        <div class="container">
+            <div class="grid-wrapper">
+                <div class="grid-box mobileapp">
+                    <img src="./images/mobileapp.png" alt="">
+                    <h1>Resumenes</h1>
+                </div>
+                <div class="grid-box webdesign">
+                    <img src="./images/webdesign.png" alt="">
+                    <h1>Examenes</h1>
+                </div>
+                <div class="grid-box marketing">
+                    <img src="./images/marketing.png" alt="">
+                    <h1>Flash Cards</h1>
+                </div>
+                <div class="grid-box branding">
+                    <img src="./images/branding.png" alt="">
+                    <h1>Mapas Conceptuales</h1>
+                </div>
+            </div>
+            <div class="services-content" id="contacto">
+                <h1>¿Quienes Somos?</h1>
+                <p>Somos un grupo de estudiantes peruanos comprometidos con el desarrollo
+                    educativo en nuestro país. Por ello nuestra plataforma web comparte resúmenes y materiales
+                    de estudio para apoyarlos en su carrera, tanto de institutos como de
+                    universidades.</p>
+                <p>Aqui podras encontrar desde resumenes,apuntes,examenes e incluso guias de aprendizaje que te ayuden a
+                    ser un estudiante de elite.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Numbers-->
+    <section class="numbers" id="Informacion">
+        <h1 class="num-text">¿Que nos ofrece EduTec del resto?</h1>
+        <p>Como estudiantes, tenemos la oportunidad de utilizar esta plataforma para subir y compartir nuestros propios
+            apuntes y materiales de estudio. También podemos acceder a los recursos que otros compañeros han compartido,
+            lo que beneficia nuestro proceso de aprendizaje y nos prepara de manera más efectiva para los exámenes.
+        </p>
+        <div class="container">
+            <div class="grid-wrapper">
+                <div class="grid-box hpyclients">
+                    <h1>2500+</h1>
+                    <h2>Mas de 2500 estudiantes del peru</h2>
+                </div>
+                <div class="grid-box prjcompleted">
+                    <h1>50+</h1>
+                    <h2>Profesionales acargo de la supervision</h2>
+                </div>
+                <div class="grid-box runningprj">
+                    <h1>2000+</h1>
+                    <h2>Plantillas alrededor de todo este tiempo </h2>
+                </div>
+                <div class="grid-box designs">
+                    <h1>700+</h1>
+                    <h2>Personas ganan dinero subiendo sus apuntes</h2>
+                </div>
+            </div>
+            <div class="mockup-img">
+                <img src="./images/team-mockup.png" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Educativos</title>
+
+    <!-- magnific-popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" type="text/css" href="/css/servicios.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <header class="header">
+            <div class="container">
+                <div class="botom position-absolute end-0" style="top: 15px;">
+                    <a href="index.html">
+                        <button type="button" class="btn btn-primary rounded-circle"
+                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .4rem; --bs-btn-font-size: .75rem;">Regresar</button>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+
+</head>
+
+<body>
+
+
+    <div class="gallery">
+
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">Asignaturas</li>
+            <li class="buttons" data-filter="ice-cream">Programacion</li>
+            <li class="buttons" data-filter="chocolate">Comunicacion</li>
+            <li class="buttons" data-filter="cake">Calculo</li>
+            <li class="buttons" data-filter="juice">Fisica</li>
+            <li class="buttons" data-filter="sandwich">Apuntes</li>
+        </ul>
+
+        <div class="image-container">
+
+            <a href="./images/1.png" class="image ice-cream">
+                <img src="./images/1.png" alt="">
+            </a>
+            <a href="./images/estadistica.png" class="image ice-cream">
+                <img src="./images/estadistica.png" alt="">
+            </a>
+            <a href="./images/3.png" class="image ice-cream">
+                <img src="./images/3.png" alt="">
+            </a>
+
+            <a href="./images/4.png" class="image chocolate">
+                <img src="./images/4.png" alt="">
+            </a>
+            <a href="./images/5.png" class="image chocolate">
+                <img src="./images/5.png" alt="">
+            </a>
+
+            <a href="./images/6.png" class="image cake">
+                <img src="./images/6.png" alt="">
+            </a>
+            <a href="./images/7.png" class="image cake">
+                <img src="./images/7.png" alt="">
+            </a>
+            <a href="./images/fracciones.png" class="image cake">
+                <img src="./images/fracciones.png" alt="">
+            </a>
+            <a href="./images/multiplicacion.jpg" class="image cake">
+                <img src="./images/multiplicacion.jpg" alt="">
+            </a>
+            <a href="./images/estadistica.png" class="image cake">
+                <img src="./images/estadistica.png" alt="">
+            </a>
+
+            <a href="./images/fisica.png" class="image juice">
+                <img src="./images/fisica.png" alt="">
+            </a>
+            <a href="./images/fisique.png" class="image juice">
+                <img src="./images/fisique.png" alt="">
+            </a>
+            <a href="./images/mru.png" class="image juice">
+                <img src="./images/mru.png" alt="">
+            </a>
+
+            <a href="./images/apunte1.jpg" class="image sandwich">
+                <img src="./images/apunte1.jpg" alt="">
+            </a>
+            <a href="./images/apunte2.jpg" class="image sandwich">
+                <img src="./images/apunte2.jpg" alt="">
+            </a>
+            <a href="./images/apunte4.jpg" class="image sandwich">
+                <img src="./images/apunte4.jpg" alt="">
+            </a>
+            <a href="./images/apunte3.jpg" class="image sandwich">
+                <img src="./images/apunte3.jpg" alt="">
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('.buttons').click(function () {
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                var filter = $(this).attr('data-filter')
+
+                if (filter == 'all') {
+                    $('.image').show(400);
+                } else {
+                    $('.image').not('.' + filter).hide(200);
+                    $('.image').filter('.' + filter).show(400);
+                }
+
+            });
+
+            $('.gallery').magnificPopup({
+
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
